@@ -1,0 +1,204 @@
+﻿<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Blocos Carvalho & Filhos Lda</title>
+  <link rel="icon" href="logo.png" type="image/png"/>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+
+<header id="navbar" class="nav-hero">
+  <div class="container nav-inner">
+    <a href="index.html" class="logo"><img src="logo.png" alt="Blocos Carvalho &amp; Filhos" class="logo-img"/></a>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Início</a></li>
+      <li><a href="sobre.html">Sobre Nós</a></li>
+      <li><a href="produtos.html">Produtos</a></li>
+      <li class="cta"><a href="contacto.html">Contacto</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger"><i class="fas fa-bars"></i></button>
+  </div>
+</header>
+
+<nav class="mobile-nav" id="mobileNav">
+  <a href="index.html" class="active" onclick="closeMenu()">Início</a>
+  <a href="sobre.html" onclick="closeMenu()">Sobre Nós</a>
+  <a href="produtos.html" onclick="closeMenu()">Produtos</a>
+  <a href="contacto.html" onclick="closeMenu()" class="m-cta"><i class="fas fa-envelope"></i> Contacto</a>
+</nav>
+
+<!-- HERO -->
+<section class="hero page-content">
+  <div class="hero-bg-img"></div>
+  <div class="hero-overlay"></div>
+  <div class="container">
+    <div class="hero-inner">
+      <div>
+        <div class="hero-eyebrow"><span class="dot"></span> Fabricantes de Blocos de Cimento</div>
+        <h1>Construção que<br><span class="grad-text">resiste ao tempo</span></h1>
+        <p class="hero-desc">Produzimos blocos de cimento de alta resistência para construção civil, muros e pavimentação. Qualidade certificada, entrega rápida em todo o país.</p>
+        <div class="hero-btns">
+          <a href="produtos.html" class="btn btn-gold"><i class="fas fa-th-large"></i> Ver Produtos</a>
+          <a href="https://wa.me/351965023275?text=Olá!%20Gostaria%20de%20pedir%20um%20orçamento." target="_blank" class="btn btn-ghost-dark"><i class="fab fa-whatsapp"></i> Pedir Orçamento</a>
+        </div>
+        <div class="hero-proof">
+          <div class="hero-proof-stat"><strong>+20</strong><span>Anos de experiência</span></div>
+          <div class="hero-proof-div"></div>
+          <div class="hero-proof-stat"><strong>+500</strong><span>Clientes satisfeitos</span></div>
+          <div class="hero-proof-div"></div>
+          <div class="hero-proof-stat"><strong>+1M</strong><span>Blocos produzidos</span></div>
+        </div>
+      </div>
+      <div class="hero-card-3d" id="heroCard">
+        <div class="hero-card-inner">
+          <div class="card-label"><i class="fas fa-chart-bar"></i> Os nossos números</div>
+          <div class="stat-rows">
+            <div class="stat-row"><div class="stat-icon"><i class="fas fa-trophy"></i></div><div><div class="stat-val">+20 Anos</div><div class="stat-lbl">de Experiência</div></div></div>
+            <div class="stat-row"><div class="stat-icon"><i class="fas fa-users"></i></div><div><div class="stat-val">+500</div><div class="stat-lbl">Clientes Satisfeitos</div></div></div>
+            <div class="stat-row"><div class="stat-icon"><i class="fas fa-cubes"></i></div><div><div class="stat-val">+1 Milhão</div><div class="stat-lbl">Blocos Produzidos</div></div></div>
+            <div class="stat-row"><div class="stat-icon"><i class="fas fa-truck"></i></div><div><div class="stat-val">48h</div><div class="stat-lbl">Entrega em Obra</div></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STATS BAR -->
+<div class="stats-bar">
+  <div class="container">
+    <div class="stats-bar-grid">
+      <div class="stats-bar-item reveal"><span class="stats-num">+20</span><span class="stats-lbl">Anos de Experiência</span></div>
+      <div class="stats-bar-item reveal reveal-delay-1"><span class="stats-num">+500</span><span class="stats-lbl">Clientes Satisfeitos</span></div>
+      <div class="stats-bar-item reveal reveal-delay-2"><span class="stats-num">+1M</span><span class="stats-lbl">Blocos Produzidos</span></div>
+      <div class="stats-bar-item reveal reveal-delay-3"><span class="stats-num">100%</span><span class="stats-lbl">Qualidade Garantida</span></div>
+    </div>
+  </div>
+</div>
+
+<!-- FEATURES -->
+<section class="section section-light">
+  <div class="container">
+    <div class="tag tag-light center"><i class="fas fa-star"></i> O que nos distingue</div>
+    <h2 class="section-title dark center">Comprometidos com <span class="grad-text-dark">a sua obra</span></h2>
+    <p class="sub dark center">Mais de duas décadas a fornecer materiais de construção com qualidade, pontualidade e preço justo.</p>
+    <div class="features-grid">
+      <div class="feature-card reveal"><div class="feature-icon"><i class="fas fa-medal"></i></div><h3>Qualidade Certificada</h3><p>Todos os produtos passam por controlo de qualidade rigoroso conforme as normas europeias EN 771-3.</p></div>
+      <div class="feature-card reveal reveal-delay-1"><div class="feature-icon"><i class="fas fa-truck"></i></div><h3>Entrega em 48h</h3><p>Frota própria para entrega em obra em 48 horas. Pontualidade e cuidado no transporte garantidos.</p></div>
+      <div class="feature-card reveal reveal-delay-2"><div class="feature-icon"><i class="fas fa-handshake"></i></div><h3>Atendimento Familiar</h3><p>Somos uma empresa familiar. Tratamos cada cliente com atenção, honestidade e aconselhamento personalizado.</p></div>
+      <div class="feature-card reveal"><div class="feature-icon"><i class="fas fa-leaf"></i></div><h3>Produção Sustentável</h3><p>Processos que minimizam o desperdício e respeitam o ambiente para um futuro mais sustentável.</p></div>
+      <div class="feature-card reveal reveal-delay-1"><div class="feature-icon"><i class="fas fa-tag"></i></div><h3>Preços Competitivos</h3><p>Produção própria sem intermediários. Orçamento transparente e rápido para o seu projeto.</p></div>
+      <div class="feature-card reveal reveal-delay-2"><div class="feature-icon"><i class="fas fa-drafting-compass"></i></div><h3>Medidas à Encomenda</h3><p>Produzimos blocos em dimensões especiais adaptadas a qualquer projeto arquitetónico.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- PRODUTOS PREVIEW -->
+<section class="section section-alt" style="padding-top:0;">
+  <div class="container" style="padding-top:96px;">
+    <div class="tag tag-light center"><i class="fas fa-cubes"></i> Catálogo</div>
+    <h2 class="section-title dark center">Os Nossos <span class="grad-text-dark">Produtos</span></h2>
+    <p class="sub dark center">Uma vasta gama de blocos para qualquer tipo de obra ou projeto de construção.</p>
+    <div class="prod-preview-grid">
+      <div class="prod-prev-card reveal">
+        <div class="prod-img-wrap">
+          <img src="bloconormal.png" alt="Blocos Normais"/>
+        </div>
+        <div class="prod-prev-body">
+          <p class="prod-cat-tag">Blocos</p>
+          <h3>Blocos</h3>
+          <p>Gama completa de blocos normais (10, 15, 20, 27) e térmicos (20 e 25). Para paredes estruturais, divisórias e vedação.</p>
+          <a href="produtos.html" class="prod-link">Ver catálogo <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+      <div class="prod-prev-card reveal reveal-delay-1">
+        <div class="prod-img-wrap">
+          <img src="manilhasnormais.png" alt="Manilhas Normais"/>
+        </div>
+        <div class="prod-prev-body">
+          <p class="prod-cat-tag">Manilhas e Tubos</p>
+          <h3>Manilhas e Tubos</h3>
+          <p>Manilhas normais e furadas para redes de saneamento, drenagem e infraestruturas. Várias dimensões.</p>
+          <a href="produtos.html" class="prod-link">Ver catálogo <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+      <div class="prod-prev-card reveal reveal-delay-2">
+        <div class="prod-img-wrap">
+          <img src="aneis.png" alt="Anéis e Cones"/>
+        </div>
+        <div class="prod-prev-body">
+          <p class="prod-cat-tag">Anéis, Cones e Caixas</p>
+          <h3>Anéis, Cones e Caixas</h3>
+          <p>Anéis, tampas, cones e caixas de visita para poços e câmaras. Montagem rápida e resistência comprovada.</p>
+          <a href="produtos.html" class="prod-link">Ver catálogo <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+    <div style="text-align:center;margin-top:44px;">
+      <a href="produtos.html" class="btn btn-dark">Ver Catálogo Completo <i class="fas fa-arrow-right"></i></a>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section">
+  <div class="container">
+    <div class="tag tag-dark center" style="margin-bottom:20px;"><i class="fas fa-bolt"></i> Orçamento Gratuito</div>
+    <h2>Pronto para começar<br>a sua <span class="grad-text">obra?</span></h2>
+    <p>Peça um orçamento gratuito hoje mesmo. Respondemos em menos de 24 horas.</p>
+    <div class="cta-btns">
+      <a href="contacto.html" class="btn btn-ghost-dark"><i class="fas fa-envelope"></i> Enviar Mensagem</a>
+      <a href="https://wa.me/351965023275?text=Olá!%20Gostaria%20de%20pedir%20um%20orçamento." target="_blank" class="btn btn-whatsapp"><i class="fab fa-whatsapp"></i> Falar pelo WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="logo"><img src="logo.png" alt="Blocos Carvalho &amp; Filhos" class="logo-img logo-img-footer"/></div>
+        <p>Fabricantes de blocos de cimento de alta resistência. Qualidade, tradição e confiança desde 2000.</p>
+      </div>
+      <div class="footer-col"><h5>Navegação</h5><ul><li><a href="index.html">Início</a></li><li><a href="sobre.html">Sobre Nós</a></li><li><a href="produtos.html">Produtos</a></li><li><a href="contacto.html">Contacto</a></li></ul></div>
+      <div class="footer-col"><h5>Produtos</h5><ul><li><a href="produtos.html">Blocos</a></li><li><a href="produtos.html">Lancis e Pavimentos</a></li><li><a href="produtos.html">Manilhas e Tubos</a></li><li><a href="produtos.html">Anéis e Cones</a></li><li></li></ul></div>
+      <div class="footer-col"><h5>Contacto</h5><ul class="footer-contact-list"><li><i class="fab fa-whatsapp"></i><a href="https://wa.me/351965023275">+351 965 023 275</a></li><li><i class="fas fa-envelope"></i><a href="mailto:Henrique.Carvalho@sapo.pt">Henrique.Carvalho@sapo.pt</a></li><li><i class="fas fa-map-marker-alt"></i><span>R. da Sombra, 4505-816 Sanguêdo</span></li></ul></div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Blocos Carvalho &amp; Filhos Lda. Todos os direitos reservados.</p>
+      <div class="footer-bottom-links"><a href="#">Política de Privacidade</a></div>
+    </div>
+  </div>
+</footer>
+
+<a href="https://wa.me/351965023275?text=Olá!%20Gostaria%20de%20pedir%20um%20orçamento." target="_blank" class="wa-float">
+  <i class="fab fa-whatsapp"></i><span class="wa-tip">Pedir Orçamento</span>
+</a>
+
+<script src="script.js"></script>
+<script>
+  // 3D tilt hero card
+  const card = document.getElementById('heroCard');
+  if(card){
+    card.addEventListener('mousemove',(e)=>{
+      const r=card.getBoundingClientRect();
+      const dx=(e.clientX-r.left-r.width/2)/r.width*14;
+      const dy=(e.clientY-r.top-r.height/2)/r.height*14;
+      card.querySelector('.hero-card-inner').style.transform=`rotateY(${dx}deg) rotateX(${-dy}deg)`;
+    });
+    card.addEventListener('mouseleave',()=>{
+      card.querySelector('.hero-card-inner').style.transform='';
+    });
+  }
+</script>
+</body>
+</html>
+
+
+
+
+

@@ -1,0 +1,139 @@
+﻿<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contacto — Blocos Carvalho & Filhos Lda</title>
+  <link rel="icon" href="logo.png" type="image/png"/>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+</head>
+<body>
+<header id="navbar">
+  <div class="container nav-inner">
+    <a href="index.html" class="logo"><img src="logo.png" alt="Blocos Carvalho &amp; Filhos" class="logo-img"/></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Início</a></li>
+      <li><a href="sobre.html">Sobre Nós</a></li>
+      <li><a href="produtos.html">Produtos</a></li>
+      <li class="cta"><a href="contacto.html" class="active">Contacto</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger"><i class="fas fa-bars"></i></button>
+  </div>
+</header>
+<nav class="mobile-nav" id="mobileNav">
+  <a href="index.html" onclick="closeMenu()">Início</a>
+  <a href="sobre.html" onclick="closeMenu()">Sobre Nós</a>
+  <a href="produtos.html" onclick="closeMenu()">Produtos</a>
+  <a href="contacto.html" class="active m-cta" onclick="closeMenu()"><i class="fas fa-envelope"></i> Contacto</a>
+</nav>
+
+<div class="page-content">
+  <section class="page-hero">
+    <div class="page-hero-bg" style="background-image:url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1400&q=80')"></div>
+    <div class="page-hero-overlay"></div>
+    <div class="container">
+      <div class="breadcrumb"><a href="index.html">Início</a> / <span>Contacto</span></div>
+      <div class="tag tag-dark center" style="margin-bottom:16px;"><i class="fas fa-envelope"></i> Fale Connosco</div>
+      <h1>Entre em <span class="grad-text">Contacto</span></h1>
+      <p>Respondemos em menos de 24 horas. Para urgências, prefira o WhatsApp.</p>
+    </div>
+  </section>
+
+  <section class="section section-light">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-card reveal">
+          <h2>Informações de <span class="grad-text-dark">Contacto</span></h2>
+          <p>Estamos prontos para responder às suas questões e preparar o seu orçamento gratuitamente.</p>
+          <div class="contact-items">
+            <div class="contact-item"><div class="contact-icon"><i class="fab fa-whatsapp"></i></div><div class="contact-item-body"><strong>WhatsApp</strong><a href="https://wa.me/351965023275" target="_blank">+351 965 023 275</a></div></div>
+            <div class="contact-item"><div class="contact-icon"><i class="fas fa-phone"></i></div><div class="contact-item-body"><strong>Telefone</strong><a href="tel:+351227453420">227 453 420</a><br><a href="tel:+351965023275">965 023 275</a></div></div>
+            <div class="contact-item"><div class="contact-icon"><i class="fas fa-envelope"></i></div><div class="contact-item-body"><strong>Email</strong><a href="mailto:Henrique.Carvalho@sapo.pt">Henrique.Carvalho@sapo.pt</a></div></div>
+            <div class="contact-item"><div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div><div class="contact-item-body"><strong>Morada</strong><span>R. da Sombra, 4505-816 Sanguêdo</span></div></div>
+            <div class="contact-item"><div class="contact-icon"><i class="fas fa-clock"></i></div><div class="contact-item-body"><strong>Horário</strong><span>Seg – Sex: 8h00 – 18h00<br>Sábado: 8h00 – 13h00</span></div></div>
+          </div>
+          <a href="https://wa.me/351965023275?text=Olá!%20Gostaria%20de%20pedir%20um%20orçamento." target="_blank" class="btn btn-whatsapp btn-full"><i class="fab fa-whatsapp"></i> Falar pelo WhatsApp</a>
+        </div>
+
+        <div class="form-card reveal reveal-delay-1">
+          <h3>Envie uma mensagem</h3>
+          <form id="contactForm">
+            <div class="form-row">
+              <div class="form-group"><label>Nome *</label><input type="text" id="nome" placeholder="O seu nome" required/></div>
+              <div class="form-group"><label>Telefone</label><input type="tel" id="telefone" placeholder="+351 9XX XXX XXX"/></div>
+            </div>
+            <div class="form-group"><label>Email *</label><input type="email" id="email" placeholder="email@exemplo.com" required/></div>
+            <div class="form-group"><label>Assunto</label>
+              <select id="assunto">
+                <option value="">Selecione o assunto</option>
+                <option>Pedido de Orçamento</option>
+                <option>Informação sobre Produtos</option>
+                <option>Entrega / Logística</option>
+                <option>Outro</option>
+              </select>
+            </div>
+            <div class="form-group"><label>Mensagem *</label><textarea id="mensagem" rows="5" placeholder="Descreva a sua necessidade, tipo de obra, quantidade estimada..." required></textarea></div>
+            <button type="submit" class="btn btn-dark btn-full"><i class="fas fa-paper-plane"></i> Enviar Mensagem</button>
+            <p class="form-note">* Campos obrigatórios. Respondemos em até 24 horas.</p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MAPA -->
+  <section class="section section-alt" style="padding-top:0;">
+    <div class="container" style="padding-top:80px;">
+      <div class="tag tag-light center"><i class="fas fa-map-marker-alt"></i> Onde Estamos</div>
+      <h2 class="section-title dark center" style="margin-bottom:40px;">A Nossa <span class="grad-text-dark">Localização</span></h2>
+      <div class="map-wrapper reveal-scale">
+        <div id="map"></div>
+        <div class="map-chip">
+          <strong>Blocos Carvalho &amp; Filhos</strong>
+          <p>R. da Sombra, 4505-816 Sanguêdo</p>
+          <a href="https://www.google.com/maps/place//data=!4m2!3m1!1s0xd247e5270593af3:0x9e7d2d10092914be" target="_blank"><i class="fas fa-external-link-alt"></i> Abrir no Google Maps</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand"><div class="logo"><img src="logo.png" alt="Blocos Carvalho &amp; Filhos" class="logo-img logo-img-footer"/></div><p>Fabricantes de blocos de cimento de alta resistência para construção civil e industrial.</p></div>
+      <div class="footer-col"><h5>Navegação</h5><ul><li><a href="index.html">Início</a></li><li><a href="sobre.html">Sobre Nós</a></li><li><a href="produtos.html">Produtos</a></li><li><a href="contacto.html">Contacto</a></li></ul></div>
+      <div class="footer-col"><h5>Produtos</h5><ul><li><a href="produtos.html">Blocos</a></li><li><a href="produtos.html">Lancis e Pavimentos</a></li><li><a href="produtos.html">Manilhas e Tubos</a></li><li><a href="produtos.html">Anéis e Cones</a></li></ul></div>
+      <div class="footer-col"><h5>Contacto</h5><ul class="footer-contact-list"><li><i class="fab fa-whatsapp"></i><a href="https://wa.me/351965023275">+351 965 023 275</a></li><li><i class="fas fa-envelope"></i><a href="mailto:Henrique.Carvalho@sapo.pt">Henrique.Carvalho@sapo.pt</a></li><li><i class="fas fa-map-marker-alt"></i><span>R. da Sombra, 4505-816 Sanguêdo</span></li></ul></div>
+    </div>
+    <div class="footer-bottom"><p>&copy; 2025 Blocos Carvalho &amp; Filhos Lda. Todos os direitos reservados.</p><div class="footer-bottom-links"><a href="#">Política de Privacidade</a></div></div>
+  </div>
+</footer>
+<a href="https://wa.me/351965023275?text=Olá!%20Gostaria%20de%20pedir%20um%20orçamento." target="_blank" class="wa-float"><i class="fab fa-whatsapp"></i><span class="wa-tip">Pedir Orçamento</span></a>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="script.js"></script>
+<script>
+  const LAT=40.9672, LNG=-8.5461;
+  const map=L.map('map',{zoomControl:true,scrollWheelZoom:false});
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{
+    attribution:'&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',maxZoom:19
+  }).addTo(map);
+  map.setView([LAT,LNG],16);
+  const icon=L.divIcon({
+    className:'',
+    html:`<div style="width:40px;height:40px;background:linear-gradient(135deg,#c9a96e,#8b6030);border-radius:50% 50% 50% 0;transform:rotate(-45deg);border:3px solid white;box-shadow:0 4px 18px rgba(139,96,48,.5)"></div>`,
+    iconSize:[40,40],iconAnchor:[20,40],popupAnchor:[0,-44]
+  });
+  L.marker([LAT,LNG],{icon}).addTo(map)
+    .bindPopup('<strong style="color:#8b6030">Blocos Carvalho &amp; Filhos Lda</strong><br>R. da Sombra, 4505-816 Sanguêdo<br><a href="https://www.google.com/maps/place//data=!4m2!3m1!1s0xd247e5270593af3:0x9e7d2d10092914be" target="_blank" style="color:#8b6030;font-weight:700;">Ver no Google Maps ↗</a>')
+    .openPopup();
+</script>
+</body>
+</html>
+
+
+
+
+

@@ -1,0 +1,22 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(\\(Get-Command python -ErrorAction SilentlyContinue\\).Source; \\(Get-Command python3 -ErrorAction SilentlyContinue\\).Source; \\(Get-Command node -ErrorAction SilentlyContinue\\).Source; \\(Get-Command npx -ErrorAction SilentlyContinue\\).Source)",
+      "mcp__Claude_Preview__preview_start",
+      "PowerShell(Start-Process \"C:\\\\Users\\\\rodri\\\\Desktop\\\\Site blocos\\\\index.html\")",
+      "Bash(python PP_EXER01.py)",
+      "Bash(python3 PP_EXER01.py)",
+      "Bash(conda run *)",
+      "PowerShell(Get-Command python, python3, conda -ErrorAction SilentlyContinue)",
+      "PowerShell($condaPath = \"$env:USERPROFILE\\\\anaconda3\\\\python.exe\"; if \\(Test-Path $condaPath\\) { & $condaPath \"C:\\\\Users\\\\rodri\\\\AppData\\\\Local\\\\Temp\\\\PP_EXER01.py\" } else { Get-ChildItem \"$env:USERPROFILE\" -Filter \"python.exe\" -Recurse -ErrorAction SilentlyContinue | Select-Object -First 5 FullName })",
+      "PowerShell(Get-ChildItem \"C:\\\\ProgramData\\\\anaconda3\", \"C:\\\\ProgramData\\\\miniconda3\", \"$env:USERPROFILE\\\\miniconda3\", \"$env:USERPROFILE\\\\anaconda3\", \"C:\\\\Users\\\\rodri\\\\AppData\\\\Local\\\\anaconda3\" -Filter \"python.exe\" -ErrorAction SilentlyContinue | Select-Object FullName)",
+      "Bash(python3 -c ' *)",
+      "PowerShell(py -3 -c \"import pdfplumber; pdf = pdfplumber.open\\('C:/Users/rodri/Downloads/Blocos Carvalho.pdf'\\); print\\(len\\(pdf.pages\\)\\); [print\\(p.extract_text\\(\\)\\) for p in pdf.pages]; pdf.close\\(\\)\" 2>&1)",
+      "PowerShell(Get-ChildItem \"C:\\\\Users\\\\rodri\\\\Downloads\\\\\" | Where-Object {$_.Name -match \"Blocos|Carvalho|bloco\"} | Select-Object Name, Extension)",
+      "PowerShell(Get-ChildItem \"C:\\\\Users\\\\rodri\\\\Downloads\\\\\" | Where-Object {$_.Extension -in \".docx\",\".doc\",\".xlsx\"} | Select-Object Name)",
+      "PowerShell(Get-NetTCPConnection -LocalPort 3000 -ErrorAction SilentlyContinue | ForEach-Object { Stop-Process -Id $_.OwningProcess -Force -ErrorAction SilentlyContinue }; Write-Host \"Done\")",
+      "PowerShell(Get-ChildItem \"C:\\\\Users\\\\rodri\\\\Desktop\\\\\" | Where-Object {$_.Extension -match \"\\\\.\\(png|jpg|jpeg|svg|webp|gif|bmp\\)$\"} | Select-Object Name, DirectoryName)",
+      "PowerShell(Get-ChildItem \"C:\\\\Users\\\\rodri\\\\Downloads\\\\\" | Where-Object {$_.Extension -match \"\\\\.\\(png|jpg|jpeg|svg|webp|gif|bmp\\)$\"} | Select-Object Name)"
+    ]
+  }
+}

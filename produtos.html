@@ -1,0 +1,210 @@
+﻿<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Produtos — Blocos Carvalho &amp; Filhos Lda</title>
+  <link rel="icon" href="logo.png" type="image/png"/>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+<header id="navbar">
+  <div class="container nav-inner">
+    <a href="index.html" class="logo"><img src="logo.png" alt="Blocos Carvalho &amp; Filhos" class="logo-img"/></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Início</a></li>
+      <li><a href="sobre.html">Sobre Nós</a></li>
+      <li><a href="produtos.html" class="active">Produtos</a></li>
+      <li class="cta"><a href="contacto.html">Contacto</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger"><i class="fas fa-bars"></i></button>
+  </div>
+</header>
+<nav class="mobile-nav" id="mobileNav">
+  <a href="index.html" onclick="closeMenu()">Início</a>
+  <a href="sobre.html" onclick="closeMenu()">Sobre Nós</a>
+  <a href="produtos.html" class="active" onclick="closeMenu()">Produtos</a>
+  <a href="contacto.html" onclick="closeMenu()" class="m-cta"><i class="fas fa-envelope"></i> Contacto</a>
+</nav>
+
+<div class="page-content">
+  <section class="page-hero">
+    <div class="page-hero-bg" style="background-image:url('https://images.unsplash.com/photo-1565193566173-7a0ee3dbe261?w=1400&q=80')"></div>
+    <div class="page-hero-overlay"></div>
+    <div class="container">
+      <div class="breadcrumb"><a href="index.html">Início</a> / <span>Produtos</span></div>
+      <div class="tag tag-dark center" style="margin-bottom:16px;"><i class="fas fa-cubes"></i> Catálogo</div>
+      <h1>Os Nossos <span class="grad-text">Produtos</span></h1>
+      <p>Blocos, lancis, pavimentos, manilhas, anéis, cones e caixas — tudo o que a sua obra precisa.</p>
+    </div>
+  </section>
+
+  <section class="section section-light">
+    <div class="container">
+
+      <div class="filter-bar">
+        <span style="font-family:Montserrat;font-weight:700;font-size:.78rem;color:var(--text-s);margin-right:6px;">Filtrar:</span>
+        <button class="filter-btn active" data-filter="all">Todos</button>
+        <button class="filter-btn" data-filter="blocos">Blocos</button>
+        <button class="filter-btn" data-filter="manilhas">Manilhas, Anéis e Cones</button>
+      </div>
+
+      <div class="products-grid" id="prodGrid">
+
+        <!-- BLOCOS NORMAIS -->
+        <div class="product-card featured reveal" data-cat="blocos">
+          <div class="product-img"><img src="bloconormal.png" alt="Blocos Normais"/></div><div class="product-body">
+            <p class="prod-cat">Blocos</p>
+            <h3>Blocos Normais</h3>
+            <p>Blocos de cimento de alta resistência para paredes estruturais, divisórias e vedação.</p>
+            <p class="dims-label"><i class="fas fa-ruler-combined"></i> Dimensões disponíveis</p>
+            <ul class="dims-list">
+              <li>50×20×10</li>
+              <li>50×20×15</li>
+              <li>50×20×15 Encaixe</li>
+              <li>50×20×20</li>
+              <li>50×20×20 Encaixe</li>
+              <li>50×20×27</li>
+              <li>Maciços de 15</li>
+            </ul>
+            <a href="https://wa.me/351965023275?text=Olá!%20Quero%20orçamento%20para%20Blocos%20Normais." target="_blank" class="btn-wa"><i class="fab fa-whatsapp"></i> Solicitar Orçamento</a>
+          </div>
+        </div>
+
+        <!-- BLOCOS TÉRMICOS -->
+        <div class="product-card reveal reveal-delay-1" data-cat="blocos">
+          <div class="product-img"><img src="blocotermico.png" alt="Blocos Térmicos"/></div><div class="product-body">
+            <p class="prod-cat">Blocos</p>
+            <h3>Blocos Térmicos</h3>
+            <p>Câmaras de ar para isolamento térmico e acústico superior. Maior conforto e menor consumo energético.</p>
+            <p class="dims-label"><i class="fas fa-ruler-combined"></i> Dimensões disponíveis</p>
+            <ul class="dims-list single-col">
+              <li>50×20×20</li>
+              <li>50×20×25</li>
+            </ul>
+            <a href="https://wa.me/351965023275?text=Olá!%20Quero%20orçamento%20para%20Blocos%20Térmicos." target="_blank" class="btn-wa"><i class="fab fa-whatsapp"></i> Solicitar Orçamento</a>
+          </div>
+        </div>
+
+
+        <!-- MANILHAS NORMAIS -->
+        <div class="product-card reveal" data-cat="manilhas">
+          <div class="product-img"><img src="manilhasnormais.png" alt="Manilhas Normais"/></div><div class="product-body">
+            <p class="prod-cat">Manilhas, Anéis e Cones</p>
+            <h3>Manilhas Normais</h3>
+            <p>Manilhas de betão para redes de saneamento, drenagem e águas pluviais.</p>
+            <p class="dims-label"><i class="fas fa-ruler-combined"></i> Dimensões disponíveis</p>
+            <ul class="dims-list single-col">
+              <li>200×1000</li>
+              <li>300×1000</li>
+              <li>400×1000</li>
+              <li>500×1000</li>
+            </ul>
+            <a href="https://wa.me/351965023275?text=Olá!%20Quero%20orçamento%20para%20Manilhas%20Normais." target="_blank" class="btn-wa"><i class="fab fa-whatsapp"></i> Solicitar Orçamento</a>
+          </div>
+        </div>
+
+        <!-- MANILHAS FURADAS -->
+        <div class="product-card reveal reveal-delay-1" data-cat="manilhas">
+          <div class="product-img"><img src="manilhasfuradas.png" alt="Manilhas Furadas"/></div>
+          <div class="product-body">
+            <p class="prod-cat">Manilhas, Anéis e Cones</p>
+            <h3>Manilhas Furadas</h3>
+            <p>Manilhas com furação para drenagem de águas freáticas e infiltração controlada no solo.</p>
+            <p class="dims-label"><i class="fas fa-ruler-combined"></i> Dimensões disponíveis</p>
+            <ul class="dims-list single-col">
+              <li>200×1000</li>
+              <li>300×1000</li>
+              <li>400×1000</li>
+              <li>500×1000</li>
+            </ul>
+            <a href="https://wa.me/351965023275?text=Olá!%20Quero%20orçamento%20para%20Manilhas%20Furadas." target="_blank" class="btn-wa"><i class="fab fa-whatsapp"></i> Solicitar Orçamento</a>
+          </div>
+        </div>
+
+        <!-- CONES -->
+        <div class="product-card reveal reveal-delay-2" data-cat="manilhas">
+          <div class="product-img"><img src="coneconcentrico.png" alt="Cones"/></div>
+          <div class="product-body">
+            <p class="prod-cat">Manilhas, Anéis e Cones</p>
+            <h3>Cones</h3>
+            <p>Cones de betão para câmaras de visita e infraestruturas de saneamento. Concêntrico e excêntrico.</p>
+            <p class="dims-label"><i class="fas fa-ruler-combined"></i> Dimensões disponíveis</p>
+            <ul class="dims-list single-col">
+              <li>600×1000 Concêntrico</li>
+              <li>600×1000 Excêntrico</li>
+            </ul>
+            <a href="https://wa.me/351965023275?text=Olá!%20Quero%20orçamento%20para%20Cones." target="_blank" class="btn-wa"><i class="fab fa-whatsapp"></i> Solicitar Orçamento</a>
+          </div>
+        </div>
+
+        <!-- ANÉIS E TAMPAS -->
+        <div class="product-card reveal" data-cat="manilhas">
+          <div class="product-img"><img src="aneis.png" alt="Anéis e Tampas"/></div>
+          <div class="product-body">
+            <p class="prod-cat">Manilhas, Anéis e Cones</p>
+            <h3>Anéis e Tampas</h3>
+            <p>Anéis e tampas de betão para poços e câmaras de visita. Montagem rápida e resistência comprovada.</p>
+            <p class="dims-label"><i class="fas fa-ruler-combined"></i> Dimensões disponíveis</p>
+            <ul class="dims-list">
+              <li>Anel 500×1000</li>
+              <li>Anel 500×1200</li>
+              <li>Anel 500×1500</li>
+              <li>Tampa 1,00</li>
+              <li>Tampa 1,20</li>
+              <li>Tampa 1,50</li>
+            </ul>
+            <a href="https://wa.me/351965023275?text=Olá!%20Quero%20orçamento%20para%20Anéis%20e%20Tampas." target="_blank" class="btn-wa"><i class="fab fa-whatsapp"></i> Solicitar Orçamento</a>
+          </div>
+        </div>
+
+        <!-- CAIXAS DE VISITA -->
+        <div class="product-card reveal reveal-delay-1" data-cat="manilhas">
+          <div class="product-img"><img src="caixasvisita.png" alt="Caixas de Visita"/></div>
+          <div class="product-body">
+            <p class="prod-cat">Manilhas, Anéis e Cones</p>
+            <h3>Caixas de Visita</h3>
+            <p>Caixas de betão para redes de saneamento e águas residuais. Resistentes e duráveis.</p>
+            <p class="dims-label"><i class="fas fa-ruler-combined"></i> Dimensões disponíveis</p>
+            <ul class="dims-list single-col">
+              <li>Caixa de 40</li>
+              <li>Caixa de 50</li>
+            </ul>
+            <a href="https://wa.me/351965023275?text=Olá!%20Quero%20orçamento%20para%20Caixas%20de%20Visita." target="_blank" class="btn-wa"><i class="fab fa-whatsapp"></i> Solicitar Orçamento</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-section">
+    <div class="container">
+      <div class="tag tag-dark center" style="margin-bottom:20px;"><i class="fas fa-question-circle"></i> Dúvidas?</div>
+      <h2>Não encontrou o que <span class="grad-text">procura?</span></h2>
+      <p>Contacte-nos e encontramos a solução certa para a sua obra.</p>
+      <div class="cta-btns">
+        <a href="contacto.html" class="btn btn-ghost-dark"><i class="fas fa-envelope"></i> Contactar</a>
+        <a href="https://wa.me/351965023275?text=Olá!%20Preciso%20de%20um%20produto%20especial." target="_blank" class="btn btn-whatsapp"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+      </div>
+    </div>
+  </section>
+</div>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand"><div class="logo"><img src="logo.png" alt="Blocos Carvalho &amp; Filhos" class="logo-img logo-img-footer"/></div><p>Fabricantes de blocos de cimento, lancis, pavimentos, manilhas, tubos, anéis e cones.</p></div>
+      <div class="footer-col"><h5>Navegação</h5><ul><li><a href="index.html">Início</a></li><li><a href="sobre.html">Sobre Nós</a></li><li><a href="produtos.html">Produtos</a></li><li><a href="contacto.html">Contacto</a></li></ul></div>
+      <div class="footer-col"><h5>Produtos</h5><ul><li><a href="produtos.html">Blocos</a></li><li><a href="produtos.html">Lancis e Pavimentos</a></li><li><a href="produtos.html">Manilhas e Tubos</a></li><li><a href="produtos.html">Anéis e Cones</a></li><li><a href="produtos.html">Caixas de Visita</a></li></ul></div>
+      <div class="footer-col"><h5>Contacto</h5><ul class="footer-contact-list"><li><i class="fab fa-whatsapp"></i><a href="https://wa.me/351965023275">965 023 275</a></li><li><i class="fas fa-phone"></i><a href="tel:+351227453420">227 453 420</a></li><li><i class="fas fa-envelope"></i><a href="mailto:Henrique.Carvalho@sapo.pt">Henrique.Carvalho@sapo.pt</a></li><li><i class="fas fa-map-marker-alt"></i><span>R. da Sombra, 4505-816 Sanguêdo</span></li></ul></div>
+    </div>
+    <div class="footer-bottom"><p>&copy; 2025 Blocos Carvalho &amp; Filhos Lda. Todos os direitos reservados.</p><div class="footer-bottom-links"><a href="#">Política de Privacidade</a></div></div>
+  </div>
+</footer>
+<a href="https://wa.me/351965023275?text=Olá!%20Gostaria%20de%20pedir%20um%20orçamento." target="_blank" class="wa-float"><i class="fab fa-whatsapp"></i><span class="wa-tip">Pedir Orçamento</span></a>
+<script src="script.js"></script>
+</body>
+</html>
+
+

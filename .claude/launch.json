@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "site-blocos",
+      "runtimeExecutable": "powershell",
+      "runtimeArgs": ["-NoProfile", "-Command", "$l=New-Object Net.HttpListener;$l.Prefixes.Add('http://localhost:3000/');$l.Start();while($l.IsListening){$c=$l.GetContext();$req=$c.Request;$res=$c.Response;$p=$req.Url.LocalPath.TrimStart('/');if($p -eq ''){$p='index.html'};$f=Join-Path 'C:\\Users\\rodri\\Desktop\\Site blocos' $p;if(Test-Path $f){$ext=[IO.Path]::GetExtension($f);$mime=@{'.html'='text/html;charset=utf-8';'.css'='text/css';'.js'='application/javascript';'.png'='image/png';'.jpg'='image/jpeg';'.svg'='image/svg+xml';'.ico'='image/x-icon'}[$ext];if(-not $mime){$mime='application/octet-stream'};$res.ContentType=$mime;$b=[IO.File]::ReadAllBytes($f);$res.ContentLength64=$b.Length;$res.OutputStream.Write($b,0,$b.Length)}else{$res.StatusCode=404};$res.Close()}"],
+      "port": 3000
+    }
+  ]
+}
