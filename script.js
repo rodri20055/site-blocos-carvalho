@@ -133,3 +133,19 @@ function showToast(msg) {
     setTimeout(() => toast.remove(), 300);
   }, 3500);
 }
+
+// ===== COOKIE BANNER =====
+(function() {
+  if (localStorage.getItem('cookie-consent')) return;
+  const banner = document.getElementById('cookieBanner');
+  if (!banner) return;
+  banner.classList.remove('hidden');
+  document.getElementById('cookieAccept').addEventListener('click', function() {
+    localStorage.setItem('cookie-consent', 'accepted');
+    banner.classList.add('hidden');
+  });
+  document.getElementById('cookieReject').addEventListener('click', function() {
+    localStorage.setItem('cookie-consent', 'rejected');
+    banner.classList.add('hidden');
+  });
+})();
