@@ -96,14 +96,13 @@ if (contactForm) {
   contactForm.addEventListener('submit', function (e) {
     e.preventDefault();
     const nome     = document.getElementById('nome').value.trim();
-    const email    = document.getElementById('email').value.trim();
     const telefone = document.getElementById('telefone')?.value.trim() || '';
     const assunto  = document.getElementById('assunto')?.value || '';
     const mensagem = document.getElementById('mensagem').value.trim();
 
-    if (!nome || !email || !mensagem) return;
+    if (!nome || !mensagem) return;
 
-    const texto = `Olá! O meu nome é ${nome}.${assunto ? '\nAssunto: ' + assunto : ''}${telefone ? '\nTelefone: ' + telefone : ''}\n\n${mensagem}\n\nEmail: ${email}`;
+    const texto = `Olá! O meu nome é ${nome}.${telefone ? '\nTelefone: ' + telefone : ''}${assunto ? '\nAssunto: ' + assunto : ''}\n\n${mensagem}`;
     window.open(`https://wa.me/351965023275?text=${encodeURIComponent(texto)}`, '_blank');
     this.reset();
     showToast('✓ A abrir WhatsApp com a sua mensagem...');

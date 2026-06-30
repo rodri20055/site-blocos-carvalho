@@ -66,13 +66,13 @@
         </div>
 
         <div class="form-card reveal reveal-delay-1">
-          <h3>Envie uma mensagem</h3>
+          <h3>Enviar mensagem pelo <span style="color:#25D366;">WhatsApp</span></h3>
+          <p style="color:var(--text-s);font-size:.9rem;margin-bottom:20px;">Preencha os campos abaixo e abrimos o WhatsApp com a mensagem já preparada. Respondemos em menos de 24 horas.</p>
           <form id="contactForm">
             <div class="form-row">
               <div class="form-group"><label>Nome *</label><input type="text" id="nome" placeholder="O seu nome" required/></div>
               <div class="form-group"><label>Telefone</label><input type="tel" id="telefone" placeholder="+351 9XX XXX XXX"/></div>
             </div>
-            <div class="form-group"><label>Email *</label><input type="email" id="email" placeholder="email@exemplo.com" required/></div>
             <div class="form-group"><label>Assunto</label>
               <select id="assunto">
                 <option value="">Selecione o assunto</option>
@@ -83,8 +83,8 @@
               </select>
             </div>
             <div class="form-group"><label>Mensagem *</label><textarea id="mensagem" rows="5" placeholder="Descreva a sua necessidade, tipo de obra, quantidade estimada..." required></textarea></div>
-            <button type="submit" class="btn btn-dark btn-full"><i class="fas fa-paper-plane"></i> Enviar Mensagem</button>
-            <p class="form-note">* Campos obrigatórios. Respondemos em até 24 horas.</p>
+            <button type="submit" class="btn btn-whatsapp btn-full"><i class="fab fa-whatsapp"></i> Enviar pelo WhatsApp</button>
+            <p class="form-note">* Campos obrigatórios. Será redirecionado para o WhatsApp.</p>
           </form>
         </div>
       </div>
